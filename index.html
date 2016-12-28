@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>mnafees</title>
+
+<!--
+    M       M  N      N        A        FFFFFFFFF EEEEEEEEE EEEEEEEEE  SSSSSS
+    MM     MM  NN     N       A A       F         E         E         S      S
+    M M   M M  N N    N      A   A      F         E         E         S
+    M  M M  M  N  N   N     A     A     F         E         E         S
+    M   M   M  N   N  N    AAAAAAAAA    FFFFFF    EEEEEE    EEEEEE     SSSSSS
+    M       M  N    N N   A         A   F         E         E                S
+    M       M  N     NN  A           A  F         E         E         S      S
+    M       M  N      N A             A F         EEEEEEEEE EEEEEEEEE  SSSSSS
+-->
+
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600|Source+Code+Pro' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <section class="header">
+            <!-- ©2015 Johannes Jakob
+                Made with <3 in Germany -->
+
+            <div class="window">
+                <div class="titlebar">
+                    <div class="buttons">
+                        <div class="close">
+                            <a class="closebutton" href="#"></a>
+                            <!-- close button link -->
+                        </div>
+                        <div class="minimize">
+                            <a class="minimizebutton" href="#"></a>
+                            <!-- minimize button link -->
+                        </div>
+                        <div class="zoom">
+                            <a class="zoombutton" href="#"></a>
+                            <!-- zoom button link -->
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>$ whoami<br>mnafees</h3>
+                    <!-- window content -->
+                </div>
+            </div>
+        </section>
+
+        <div class="row">
+            <div class="four columns">
+                <img id="mnafees_pic" class="mepic" src="me.jpg">
+                <h6 class="codefont">Check your JavaScript console to see <a href="https://en.wikipedia.org/wiki/EXIF" target="_blank">EXIF</a> data for the image!</h6>
+            </div>
+            <div class="eight columns">
+                <h3 class="codefont">{{about_me}}</h3>
+                <p>I am Mohammed Nafees, a student of the University of Waterloo.</p>
+                <ul class="soc">
+                    <li><a class="soc-twitter" href="https://twitter.com/thebinaryking" target="_blank"></a></li>
+                    <li><a class="soc-facebook" href="https://fb.com/mnafees.me" target="_blank"></a></li>
+                    <li><a class="soc-googleplus" href="https://plus.google.com/+MohammedNafees" target="_blank"></a></li>
+                    <li><a class="soc-linkedin" href="https://ca.linkedin.com/in/mohammed-nafees-a0686167" target="_blank"></a></li>
+                    <li><a class="soc-github" href="https://github.com/mnafees" target="_blank"></a></li>
+                    <li><a class="soc-instagram soc-icon-last" href="https://www.instagram.com/mohammed_nafees/" target="_blank"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+        <h6 class="codefont">Handmade with &lt;&#47;code&gt; on a MacBook</h6>
+    </div>
+
+    <script src="js/exif-js.min.js"></script>
+    <script>
+        EXIF.getData(document.getElementById("mnafees_pic"), function() {
+            var allMetaData = EXIF.getAllTags(this);
+            console.log("EXIF data:\n" + JSON.stringify(allMetaData));
+        });
+        console.log(
+            "M       M  N      N        A        FFFFFFFFF EEEEEEEEE EEEEEEEEE  SSSSSS\n" +
+            "MM     MM  NN     N       A A       F         E         E         S      S\n" +
+            "M M   M M  N N    N      A   A      F         E         E         S\n" +
+            "M  M M  M  N  N   N     A     A     F         E         E         S\n" +
+            "M   M   M  N   N  N    AAAAAAAAA    FFFFFF    EEEEEE    EEEEEE     SSSSSS\n" +
+            "M       M  N    N N   A         A   F         E         E                S\n" +
+            "M       M  N     NN  A           A  F         E         E         S      S\n" +
+            "M       M  N      N A             A F         EEEEEEEEE EEEEEEEEE  SSSSSS\n\n"
+        );
+    </script>
+</body>
+</html>
