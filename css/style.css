@@ -19,7 +19,7 @@ span {
 
 .window {
     background: #333333;
-    width: 50vw;
+    width: auto;
     margin: auto;
     margin-top: 12.5vh;
     border: 1px solid #000000;
@@ -268,4 +268,9 @@ span {
 }
 .soc-instagram:before {
     content:'\e057';
+}
+
+.tip {
+    font-size: 12px;
+    color: #D1D1D1;
 }
